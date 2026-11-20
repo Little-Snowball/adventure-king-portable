@@ -1,0 +1,13 @@
+# 运行时生成的个人存档、日志、缓存和锁文件
+/data/
+
+# 本地构建输入和生成文件
+/original/
+__pycache__/
+*.py[cod]
+*.class
+*.sol
+
+# Windows 文件管理器元数据
+Thumbs.db
+Desktop.ini

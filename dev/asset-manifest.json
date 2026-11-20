@@ -1,0 +1,391 @@
+{
+  "source": "https://www.7k7k.com/swf/98413.htm",
+  "assetBase": "https://flash.7k7k.com/cms/cms10/20120827/1509472195/1/",
+  "runtimeRelease": "https://github.com/ruffle-rs/ruffle/releases/tag/nightly-2026-11-20",
+  "runtimeArchiveSha256": {
+    "x64": "692cec8ab36ba101d47dff34cf6f3caf92a9baa233c2a6dffea268309bb1ff10",
+    "x86": "3375dec739c58a5e1ce489a821fbea4d1fadbeb5b5617f71c64105ca45b37f68"
+  },
+  "files": [
+    {
+      "path": "game/files.xml",
+      "bytes": 41,
+      "sha256": "0a9ce41113494e12552cdff87508a37a9f9ede6379f3011963282b5dd61ca851"
+    },
+    {
+      "path": "game/game.swf",
+      "bytes": 6707036,
+      "sha256": "00350dcc92eb1d50ad1c311222642cdb8a529990cce9cd85a2ece51272cec114"
+    },
+    {
+      "path": "game/gameload.swf",
+      "bytes": 14740,
+      "sha256": "000be4a121a85d9c016c98e67b9448f413b97f7794f469b675a1ea7fd0cd18ba"
+    },
+    {
+      "path": "game/mapPic/lv0n.swf",
+      "bytes": 157009,
+      "sha256": "851d15c6656f79d202a3f52a47ed63365fea30235b6d4d18386b4021cd44aef2"
+    },
+    {
+      "path": "game/mapPic/lv10n.swf",
+      "bytes": 339426,
+      "sha256": "1c9614264f0a85210a9f60854289583089884cea9aa4c594f55f6f83a9640e08"
+    },
+    {
+      "path": "game/mapPic/lv11f.swf",
+      "bytes": 52289,
+      "sha256": "6ecf3f3322708e13fe16b0e05e44f40098ec942ddff978368bc601aa6c48fcde"
+    },
+    {
+      "path": "game/mapPic/lv11n.swf",
+      "bytes": 245970,
+      "sha256": "c130a7c7e4a1b3d828290ba675c5949b5062fe3df6841259a3927d7199fa1cde"
+    },
+    {
+      "path": "game/mapPic/lv12f.swf",
+      "bytes": 65284,
+      "sha256": "40aa7bd123dcf5cf10c789deb97d34afd6bf0c60f9596cd6aa38e78cebd674b1"
+    },
+    {
+      "path": "game/mapPic/lv12n.swf",
+      "bytes": 55769,
+      "sha256": "9da53a60f36772c0db89fd84b58226da55de64da49318463243ca041189256ce"
+    },
+    {
+      "path": "game/mapPic/lv13f.swf",
+      "bytes": 21078,
+      "sha256": "8a899d2b364558c0df81ab59663db5218690434c30dbc9d9741a762804e783d0"
+    },
+    {
+      "path": "game/mapPic/lv13n.swf",
+      "bytes": 268145,
+      "sha256": "b1642cd3904a52bb78bc65197071e535c1ea6e3e4fce094f1ebf3d71d55b9ce6"
+    },
+    {
+      "path": "game/mapPic/lv1f.swf",
+      "bytes": 99749,
+      "sha256": "a91dbb0b8543765043cfbc6ce5780085243a4eb60e50ec3ab58ca6c53dba91ad"
+    },
+    {
+      "path": "game/mapPic/lv1n.swf",
+      "bytes": 316988,
+      "sha256": "9ea379c592bd995c1521d50c7b465509793b542eda31a858de3d9678749f5764"
+    },
+    {
+      "path": "game/mapPic/lv2f.swf",
+      "bytes": 83394,
+      "sha256": "e2a358b7b7f181d60306de3b83f0799b6ad4ee0c1833ac97457a1ce8c400a349"
+    },
+    {
+      "path": "game/mapPic/lv2n.swf",
+      "bytes": 180129,
+      "sha256": "46299ee312daad2bc7754f1bcf258f4961b16ee465210c7db37aac94b8b14fc0"
+    },
+    {
+      "path": "game/mapPic/lv3f.swf",
+      "bytes": 83394,
+      "sha256": "734fcdea2fcb6df2971d0e8e3029ffeb3d4b2f8d1d5dfb75f2afe9d8af38cae2"
+    },
+    {
+      "path": "game/mapPic/lv3n.swf",
+      "bytes": 298649,
+      "sha256": "0a580b130eb9f289fb6f512202dd7f77b61a2d540f197ce2e622ec6e72b3c3f0"
+    },
+    {
+      "path": "game/mapPic/lv4f.swf",
+      "bytes": 70273,
+      "sha256": "63e4aa85e72b96d1701a1e311636f8f05a1fd5818df536e42d2f2d14c577bfd9"
+    },
+    {
+      "path": "game/mapPic/lv4n.swf",
+      "bytes": 256352,
+      "sha256": "72344d478c21d17e056f099a9b674dc51036dcc1e15d2cd4289fe2ff8b7cd014"
+    },
+    {
+      "path": "game/mapPic/lv5f.swf",
+      "bytes": 74499,
+      "sha256": "95bfcdb360e31e29bd876658a92b8ba9f3c9ab8863535414cdb98c11a0411b37"
+    },
+    {
+      "path": "game/mapPic/lv5n.swf",
+      "bytes": 102169,
+      "sha256": "43a3ce9917bacb00e792fba954673d8acaadba62afcf7189c2a2eb2cdb8353e1"
+    },
+    {
+      "path": "game/mapPic/lv6f.swf",
+      "bytes": 99448,
+      "sha256": "270bb8b1beb2d0b99152949a2fd5467364b2fee5822975427a358924583b6b3f"
+    },
+    {
+      "path": "game/mapPic/lv6n.swf",
+      "bytes": 241447,
+      "sha256": "f18b37c4e9a3d1beac0260c5ce0dc81f0e6739463c4a35682b2885ee819a0076"
+    },
+    {
+      "path": "game/mapPic/lv7f.swf",
+      "bytes": 52759,
+      "sha256": "283b0c5163feb301b059f53b641a42624307968bd6e42c44a3a1991b17973607"
+    },
+    {
+      "path": "game/mapPic/lv7n.swf",
+      "bytes": 305311,
+      "sha256": "d45440a58390dff417eac0d1179609189d11321bd3f4932e1ca3749ed2374dcf"
+    },
+    {
+      "path": "game/mapPic/lv8n.swf",
+      "bytes": 338584,
+      "sha256": "8d9bc3cf2783f334a9311d15fb5d72aa4f4efd2b67b65adee6ef30cb2c073ed6"
+    },
+    {
+      "path": "game/mapPic/lv9f.swf",
+      "bytes": 64298,
+      "sha256": "b5d1fe74f5afd2878a8243e388c79b70b6b241ef06d51e6a274e21933e131848"
+    },
+    {
+      "path": "game/mapPic/lv9n.swf",
+      "bytes": 285809,
+      "sha256": "ba628e17d0e8ca3071b3daacd9aa21d9203af8692528356a2896855a6f45150e"
+    },
+    {
+      "path": "game/mapPic/upbg1.swf",
+      "bytes": 43317,
+      "sha256": "fe2b27d61a956b7afecb3ce8554bafbd2994dc944af24f56ba7223fd588337e7"
+    },
+    {
+      "path": "game/monster/b10mc.swf",
+      "bytes": 115491,
+      "sha256": "fec1dbe82c7b78f5a558e753dc91500fec1be1d68d98801593444f6ebce87db6"
+    },
+    {
+      "path": "game/monster/b11mc.swf",
+      "bytes": 703947,
+      "sha256": "6742b32f6e46de70d700cb6742e1e55af2cbac1db9746a2a72b9a36e9135505a"
+    },
+    {
+      "path": "game/monster/b1mc.swf",
+      "bytes": 203902,
+      "sha256": "e64aa5f8bfca6dd22559a77a27db204fdfa37eba7285a9952d3c606cd50e07c3"
+    },
+    {
+      "path": "game/monster/b2mc.swf",
+      "bytes": 66071,
+      "sha256": "5344b265e8cf77910462dd22fb27466e82eaaf45ed51b9dc6c8092659ea93c16"
+    },
+    {
+      "path": "game/monster/b3mc.swf",
+      "bytes": 542081,
+      "sha256": "6c355c936ab67ffbb2fcc1f8791a8615c9299e93902810c1d85bcaf636e411b6"
+    },
+    {
+      "path": "game/monster/b4mc.swf",
+      "bytes": 235602,
+      "sha256": "cb095558894947be03a82260241eed881be07e722142e25d5ca2d50730a05403"
+    },
+    {
+      "path": "game/monster/b5mc.swf",
+      "bytes": 666072,
+      "sha256": "f20c34b49d3303696ea37473a97793c9d6b5fa4b09426c74b2933c95a12535cb"
+    },
+    {
+      "path": "game/monster/b6mc.swf",
+      "bytes": 119848,
+      "sha256": "779a37221cea81a7ce83f801c039cfbc9033d94412315556035b52f5853825f2"
+    },
+    {
+      "path": "game/monster/b7mc.swf",
+      "bytes": 151934,
+      "sha256": "2afdf9b0b4fee8fa1a7b1069e17e165305d5c449054ddbdfe45fd73b923482a2"
+    },
+    {
+      "path": "game/monster/b8mc.swf",
+      "bytes": 47157,
+      "sha256": "d39f137b05c528120f935702ff7b3c4bc4607df06d2d87f829a6cf82f7fc7ccf"
+    },
+    {
+      "path": "game/monster/b9mc.swf",
+      "bytes": 87397,
+      "sha256": "df8c56ad995300c9c6dde459ec196ce57e4a3d6b9b2c1aa6cf118b7f7bb8240b"
+    },
+    {
+      "path": "game/monster/fl1mc.swf",
+      "bytes": 18310,
+      "sha256": "b14020c2c78c94037d78abda4ad38730dbb55b9cd2ffe6ad75a2d891ed6eaf37"
+    },
+    {
+      "path": "game/monster/fl2mc.swf",
+      "bytes": 21793,
+      "sha256": "55a9d2dda46e0f6abd18690e8bd8d6454f45046479c0ab00701e03633654572c"
+    },
+    {
+      "path": "game/monster/l10mc.swf",
+      "bytes": 22350,
+      "sha256": "7f8f554695d26c600498069e197c59d69ae851420325577babf2c52a4ad4c23c"
+    },
+    {
+      "path": "game/monster/l11mc.swf",
+      "bytes": 24491,
+      "sha256": "7f37cb7bd7311e19f9dc89f63bf695916dd9df01712c5d2f853c334e789dbeda"
+    },
+    {
+      "path": "game/monster/l12mc.swf",
+      "bytes": 36377,
+      "sha256": "1e39464df649ca36f11290ed8ec24c750ab099f187913e48ba2bcad110d6edb2"
+    },
+    {
+      "path": "game/monster/l13mc.swf",
+      "bytes": 32657,
+      "sha256": "28d7113763cb878839e08d41b4123281fa8f124eb70ff05a5079ac5c5ace977d"
+    },
+    {
+      "path": "game/monster/l14mc.swf",
+      "bytes": 42074,
+      "sha256": "8033faadddf7ba97d5ad6496d5dd9835254487fff265000a510b602ec4788648"
+    },
+    {
+      "path": "game/monster/l15mc.swf",
+      "bytes": 32377,
+      "sha256": "4c0e9dace015f5df0f9fe32f1e151f1abe006bf2357c530eeb1f1891cb6f2124"
+    },
+    {
+      "path": "game/monster/l1mc.swf",
+      "bytes": 16018,
+      "sha256": "8d09e174d677b544bb9c6f437bc94f04b85f0115fa1c31a188e542988a65cf43"
+    },
+    {
+      "path": "game/monster/l2mc.swf",
+      "bytes": 15625,
+      "sha256": "3968f0e2c44de6fcc6120e9cb24e05682e8cf0b0c34deb294f0f90ac42fc9e87"
+    },
+    {
+      "path": "game/monster/l3mc.swf",
+      "bytes": 16284,
+      "sha256": "ce84b82b63ac24e274faa3219f8eaa250d6d3541930d05e55841ed9f5a57f836"
+    },
+    {
+      "path": "game/monster/l4mc.swf",
+      "bytes": 20461,
+      "sha256": "79f5ea9b978e700bfb71cd1cd8955d5dd9fcf4b61ee96e76fdc08256afb02171"
+    },
+    {
+      "path": "game/monster/l5mc.swf",
+      "bytes": 21537,
+      "sha256": "e29584289d055694695983fed94958271e025a55b1be350cd6d881abd59617b2"
+    },
+    {
+      "path": "game/monster/l6mc.swf",
+      "bytes": 37811,
+      "sha256": "82ba98efe500baad09d1c0e8a9214a9a7274dd1bab69a54cd2e0f208f757040d"
+    },
+    {
+      "path": "game/monster/l7mc.swf",
+      "bytes": 16818,
+      "sha256": "b4280615b37c82343e8070fd90300fda34eecd2d6349f504b14c2c084502103d"
+    },
+    {
+      "path": "game/monster/l8mc.swf",
+      "bytes": 13637,
+      "sha256": "72c50943e35aa5691c3eff131ae9164130f72e8e98aed4a5a31c13095edd7d16"
+    },
+    {
+      "path": "game/monster/l9mc.swf",
+      "bytes": 11418,
+      "sha256": "6fd0c9353aa981cb7be230eb0e8272732a75c28bc3c6d79e5e5aa93aa542f8cd"
+    },
+    {
+      "path": "game/monster/pet1_1mc.swf",
+      "bytes": 50063,
+      "sha256": "1586fb182ca89d31ca878ef8d17b31d9e92b55019267e56fb44e74ee9fb6d0bc"
+    },
+    {
+      "path": "game/monster/pet1_2mc.swf",
+      "bytes": 87796,
+      "sha256": "652fc5337276c71fd45d24c381b1d7aa2e6956cc972fed157ae2e9fda9afb7e6"
+    },
+    {
+      "path": "game/monster/pet1_3mc.swf",
+      "bytes": 199117,
+      "sha256": "cc16cc7dfed7a1cb91a7af5dfe010ff226b7497c6d8ed132e9e1f383751900e8"
+    },
+    {
+      "path": "game/monster/pet2_1mc.swf",
+      "bytes": 83068,
+      "sha256": "6f3dd89c6ac04502dfe1e396f823b1bfea4337be55b5e434d7042a72f627750c"
+    },
+    {
+      "path": "game/monster/pet2_2mc.swf",
+      "bytes": 99448,
+      "sha256": "533ecc458509d0deda212d2cf2c8ecaff056472116401fbea055c0f8e8bc7664"
+    },
+    {
+      "path": "game/monster/pet2_3mc.swf",
+      "bytes": 153231,
+      "sha256": "961166cd54b030b3518195668eda8f4c0d118ed2a7dcef6b205d6f8a8b59d59c"
+    },
+    {
+      "path": "game/monster/pet3_1mc.swf",
+      "bytes": 48765,
+      "sha256": "2cf22527b9817be97d29d4b962c130bf1bb4bcf316f273c501528ce7414a9ad3"
+    },
+    {
+      "path": "game/monster/pet3_2mc.swf",
+      "bytes": 75870,
+      "sha256": "bd95b33de0c99b71f50d8df37223ee60ca38891bcdf35f62dc2cb989fdc1b17a"
+    },
+    {
+      "path": "game/monster/pet3_3mc.swf",
+      "bytes": 286209,
+      "sha256": "9b68ff2c2d0ce4f409e62272b5d896c9545a9a8a214fb8b97f3a0cf62a012a3c"
+    },
+    {
+      "path": "game/music/music1.mp3",
+      "bytes": 630316,
+      "sha256": "941fb98fe316235d1549296cdfdc5ac1db337e4146cc00d72ce246fa56d43057"
+    },
+    {
+      "path": "game/music/music2.mp3",
+      "bytes": 1117995,
+      "sha256": "feebdcc201a9aab40ba4027b782fab73c14d256852b39a7a0da9ff876eeddedf"
+    },
+    {
+      "path": "game/music/music3.mp3",
+      "bytes": 1050100,
+      "sha256": "3e18b4d0e2a23fa2e5f87f543b5b53456a43f3de60dff1f645beb290b750009e"
+    },
+    {
+      "path": "game/music/music4.mp3",
+      "bytes": 1494682,
+      "sha256": "b1d56a88e1ec4e3510f33ca3f9d9b14a1740bceae5ae5796f974afb4d95082df"
+    },
+    {
+      "path": "game/music/music5.mp3",
+      "bytes": 927221,
+      "sha256": "e9af17be8aad7ae8dab4df4a7856527c5a4dab43afb513e92135fd1740f2c8cb"
+    },
+    {
+      "path": "game/music/music6.mp3",
+      "bytes": 441790,
+      "sha256": "5d63fba18d66c82b12b538ba6b373d2d5a4abc48ba09c69f24867d84670a6dd2"
+    },
+    {
+      "path": "game/music/music7.mp3",
+      "bytes": 1569652,
+      "sha256": "069db6124ebb7143edc8f18689b93c8191e7539fc44a321efb90fdaa3c6a9a18"
+    },
+    {
+      "path": "game/music/musicBegin.mp3",
+      "bytes": 1258251,
+      "sha256": "2995faa8f8cffa6b50235b8c43d13529a8b2cf52cb109102b2fe542e02a30623"
+    },
+    {
+      "path": "game/presets/double-mage.amf",
+      "bytes": 2944,
+      "sha256": "6431d5af024a8978ac90a6357a7792e8c5b311c12350059f2c8f772111e2d435"
+    },
+    {
+      "path": "game/presets/single-mage.amf",
+      "bytes": 1570,
+      "sha256": "9d6398f9212e0ab51df2a1fd651cb590a136a658e84406c6b793f785ae59eb14"
+    }
+  ]
+}
