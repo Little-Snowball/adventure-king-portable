@@ -35,4 +35,8 @@
 
 ## 来源与许可
 
-游戏素材及原始程序归各自权利人所有。内置 Ruffle 版本为 `nightly-2026-11-20`，随附许可文件。 [游戏原页](https://www.7k7k.com/swf/98413.htm) · [Ruffle 官方发布](https://github.com/ruffle-rs/ruffle/releases/tag/nightly-2026-11-20) · [Ruffle 许可](runtime/x64/LICENSE.md)
+项目原创贡献采用 [BSD 零条款许可证（0BSD）](LICENSE)。该许可允许商用、修改和再分发，无须保留署名或许可文本。适用范围为本项目原创的 Windows 启动器、独立补丁工具、预设生成器与原创文档。
+
+原游戏程序、关卡、音乐、美术等素材，以及含原游戏代码的修改版 SWF 和反编译脚本，归各自权利人所有。预设文件含游戏数据。上述文件的权利须依据各自来源确定。 [游戏原页](https://www.7k7k.com/swf/98413.htm)
+
+内置 Ruffle 版本为 `nightly-2026-11-20`，沿用上游的 Apache-2.0 和 MIT 许可及随附的第三方声明。 [Ruffle 官方发布](https://github.com/ruffle-rs/ruffle/releases/tag/nightly-2026-11-20) · [Ruffle 许可](runtime/x64/LICENSE.md)
