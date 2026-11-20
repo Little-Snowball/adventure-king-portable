@@ -4,7 +4,7 @@
 
 ## 开始游戏
 
-1. 在 GitHub 仓库页面选择 `Code` → `Download ZIP`，将整个压缩包解压到可写目录。也可以克隆仓库。
+1. 从发行页下载 `adventure-king-portable-1.0.0-windows.zip`，将整个压缩包解压到可写目录。 [v1.0.0 发行页](https://github.com/Little-Snowball/adventure-king-portable/releases/tag/v1.0.0)
 2. 双击 `Play.exe`。保留 `game`、`runtime` 和 `game.ini` 在启动器旁边。
 3. 在启动选单新开单人或双人游戏、选择预设存档，或通过「游戏主菜单」继续个人进度和修改按键。
 
