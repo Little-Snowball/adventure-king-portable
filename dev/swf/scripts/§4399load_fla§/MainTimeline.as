@@ -408,14 +408,74 @@ package §4399load_fla§
          var modeData:* = players == 2 ? dealer.tempDate.twoPlayerDate : dealer.tempDate.onePlayerDate;
          if(modeData == null) modeData = dealer.tempDate.onePlayerDate;
          if(modeData == null) return;
+         this.captureLiveBags(game,modeData,players);
          this.maxRole(modeData.role1Date);
          if(players == 2) this.maxRole(modeData.role2Date);
          this.retirePets(game,players);
          game.saveRoleDate(dealer.tempDate);
-         this.refreshFight(game);
+         this.syncFightData(game,dealer,players,true);
          this.showHint(game,"已满级。宠物已回到休息状态，装备与宝石已放入背包，请自行穿戴。");
          this.maxLevelDone = true;
          if(this.diagnostics) trace("[AdventureKing] max level applied players=" + players);
+      }
+
+      // 保持当前战斗实例与 saveRoleDate 深拷贝后的 tempDate 引用一致，避免后续穿戴装备或召唤宠物写到旧对象，
+      // 并重建背包面板以同步 Knapsack.m_aPackage（其 updateEquip 会用 filter() 断开原数组引用）与物品计数。
+      private function captureLiveBags(game:*, modeData:*, players:int) : void
+      {
+         var fight:* = game.thisFight;
+         if(fight == null || modeData == null) return;
+         if(modeData.role1Date != null && fight.role1Bag != null && fight.role1Bag.m_aPackage != null)
+            modeData.role1Date.roleBag = fight.role1Bag.m_aPackage;
+         if(players == 2 && modeData.role2Date != null && fight.role2Bag != null && fight.role2Bag.m_aPackage != null)
+            modeData.role2Date.roleBag = fight.role2Bag.m_aPackage;
+      }
+
+      private function syncFightData(game:*, dealer:*, players:int, refreshAndRebuild:Boolean) : void
+      {
+         var fight:* = game.thisFight;
+         if(fight == null || dealer == null || dealer.tempDate == null) return;
+         var modeData:* = players == 2 ? dealer.tempDate.twoPlayerDate : dealer.tempDate.onePlayerDate;
+         if(modeData == null) modeData = dealer.tempDate.onePlayerDate;
+         if(modeData == null) return;
+         fight.gameActorDate = modeData;
+         this.rebindActor(fight.mainActor1,modeData.role1Date);
+         if(players == 2) this.rebindActor(fight.mainActor2,modeData.role2Date);
+         if(refreshAndRebuild) this.refreshFight(game);
+         this.rebuildBag(fight,fight.mainActor1,1);
+         if(players == 2) this.rebuildBag(fight,fight.mainActor2,2);
+      }
+
+      private function rebindActor(actor:*, roleData:*) : void
+      {
+         if(actor == null || roleData == null) return;
+         actor.thisPro = roleData;
+         if(actor.myPet != null && int(roleData.roleCurPet) >= 0 && roleData.rolePet != null)
+         {
+            var petData:* = roleData.rolePet[int(roleData.roleCurPet)];
+            if(petData != null) actor.myPet.thisPro = petData;
+         }
+      }
+
+      private function rebuildBag(fight:*, actor:*, slot:int) : void
+      {
+         if(fight == null || actor == null || actor.thisPro == null) return;
+         var key:String = "role" + slot + "Bag";
+         var oldBag:* = fight[key];
+         var wasVisible:Boolean = oldBag != null && Boolean(oldBag.visible);
+         if(oldBag != null)
+         {
+            oldBag.closeKnapsack();
+            if(oldBag.parent != null) oldBag.parent.removeChild(oldBag);
+         }
+         var pro:* = actor.thisPro;
+         fight.initBag(pro.roleName,pro.roleSex,pro.roleCareer,pro.roleLevel,
+            actor.thisCurHp,actor.thisCurMp,actor.thisAllHp,actor.thisAllMp,
+            pro.roleBag,pro.roleEquip,slot);
+         if(wasVisible)
+         {
+            fight.openBag(pro.roleLevel,actor.thisCurHp,actor.thisCurMp,actor.thisAllHp,actor.thisAllMp,slot);
+         }
       }
 
       // 数据侧的 roleCurPet 已经是 -1，这里让在场宠物同步退场，避免数据与场景不一致。
@@ -457,10 +517,12 @@ package §4399load_fla§
             scores.push(100 << stage);
             stage++;
          }
+         this.captureLiveBags(game,modeData,players);
          modeData.mapArray = maps;
          modeData.scoreArray = scores;
          game.saveRoleDate(dealer.tempDate);
-         this.refreshBigMap(game,modeData.mapArray);
+         this.syncFightData(game,dealer,players,false);
+         this.refreshBigMap(game,maps);
          this.showHint(game,"已把 1–13 关标记为通关，大图关卡按钮已解锁。");
          this.unlockAllDone = true;
          if(this.diagnostics) trace("[AdventureKing] unlock all levels players=" + players);
