@@ -14,13 +14,13 @@
     },
     {
       "path": "game/game.swf",
-      "bytes": 6707036,
-      "sha256": "00350dcc92eb1d50ad1c311222642cdb8a529990cce9cd85a2ece51272cec114"
+      "bytes": 6707075,
+      "sha256": "cdc56ea5cc7c0faf5c2a40933b0e426874784da8769ea473d8bef2fb365c15e6"
     },
     {
       "path": "game/gameload.swf",
-      "bytes": 14740,
-      "sha256": "000be4a121a85d9c016c98e67b9448f413b97f7794f469b675a1ea7fd0cd18ba"
+      "bytes": 19818,
+      "sha256": "1ff365a71d329bbfb4b785002eaac27b9d3cebb1282eeec54406f1b00f834c29"
     },
     {
       "path": "game/mapPic/lv0n.swf",
@@ -378,14 +378,14 @@
       "sha256": "2995faa8f8cffa6b50235b8c43d13529a8b2cf52cb109102b2fe542e02a30623"
     },
     {
-      "path": "game/presets/double-mage.amf",
-      "bytes": 2944,
-      "sha256": "6431d5af024a8978ac90a6357a7792e8c5b311c12350059f2c8f772111e2d435"
+      "path": "game/ui/wudi-off.png",
+      "bytes": 58036,
+      "sha256": "550351ea8565dee68857cabb8e2b4aafd91fecbffa549e2116298b0c9f13c6d0"
     },
     {
-      "path": "game/presets/single-mage.amf",
-      "bytes": 1570,
-      "sha256": "9d6398f9212e0ab51df2a1fd651cb590a136a658e84406c6b793f785ae59eb14"
+      "path": "game/ui/wudi-on.png",
+      "bytes": 59963,
+      "sha256": "df8c75eb0dbcd37ac10b8ab0b877263ca0b4936bf021232042bdcb28b6bf4118"
     }
   ]
 }

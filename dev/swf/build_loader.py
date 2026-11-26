@@ -8,6 +8,16 @@ from tempfile import TemporaryDirectory
 
 PACKAGE = '§4399load_fla§'
 
+# 新入口必须存在。任一缺失说明 scripts 目录不是这一版启动器源码。
+REQUIRED_TIMELINE = ('[AdventureKing]', 'function enterGame()', 'function applyMaxLevel(',
+                     'function unlockAllLevels(', 'function dropPetBoards(')
+REQUIRED_LOADING = ('function load_inf(', 'function loadFailed(')
+
+# 自绘选单与预设存档已整体移除，导出里再出现即为残留。
+FORBIDDEN = ('showStartupMenu', 'startupMenu', 'presetStorage', 'presetLoader',
+             'openPreset', 'onPresetClick', 'mountPreset', 'single-mage',
+             'double-mage', 'shengbingchuanqi-')
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -32,9 +42,15 @@ def main():
         exported = work / 'verify' / 'scripts' / PACKAGE
         timeline = (exported / 'MainTimeline.as').read_text(encoding='utf-8')
         loading = (exported / 'mc_load_3.as').read_text(encoding='utf-8')
-        if ('[AdventureKing]' not in timeline or 'function showStartupMenu()' not in timeline
-                or '.readObject()' not in timeline or 'function showStart()' not in loading):
-            raise RuntimeError('The exported SWF is missing the startup menu or preset loader patch')
+        for entry in REQUIRED_TIMELINE:
+            if entry not in timeline:
+                raise RuntimeError('MainTimeline is missing ' + entry)
+        for entry in REQUIRED_LOADING:
+            if entry not in loading:
+                raise RuntimeError('mc_load_3 is missing ' + entry)
+        for name in FORBIDDEN:
+            if name in timeline or name in loading:
+                raise RuntimeError('Removed startup menu or preset symbol still present: ' + name)
         patched.replace(output)
     print(output)
 
