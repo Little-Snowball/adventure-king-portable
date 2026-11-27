@@ -7,6 +7,12 @@
 1. 解压到可写目录，确保 `Play.exe` 旁保留 `game`、`runtime` 和 `game.ini`。
 2. 双击 `Play.exe` 启动游戏，载入后直接进入主菜单（单人／双人／继续存档／改键）。
 
+## 实机演示
+
+[![无需Flash！《冒险王》Windows便携版：双击即玩+一键满级+一键通关](docs/images/bilibili-cover.png)](https://www.bilibili.com/video/BV1121pzuEnX)
+
+> 点击封面或链接前往 B 站观看：[【无需Flash！《冒险王》Windows便携版：双击即玩+一键满级+一键通关】](https://www.bilibili.com/video/BV1121pzuEnX)
+
 ## 主要改动
 
 - **技能长按连发**：单人／双人均可长按技能键连续施放，沿用原有冷却与解锁规则。
